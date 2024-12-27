@@ -8,20 +8,20 @@ public class FirstAspect {
       //  @Pointcut("execution(* enset.zakariae.test.*.main(..))")
         public void pc1() { }
 
-     /*   @Before("pc1()")
+     //   @Before("pc1()")
         public void beforeMain() {
                 System.out.println("**********");
                 System.out.println("Before main from Aspect with Class syntax");
                 System.out.println("**********");
         }
 
-        @After("pc1()")
+      //  @After("pc1()")
         public void AfterMain() {
             System.out.println("**********");
             System.out.println("After main from Aspect with Class syntax");
             System.out.println("**********");
         }
-    */
+
 
     //    @Around("pc1()") // remplace Before et After
             public void AroundMain(ProceedingJoinPoint pjp) throws Throwable {
